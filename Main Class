@@ -1,0 +1,22 @@
+/* Boris Caraballo Linked list Main Class
+**/ 
+public class Main{
+  
+  public static void main(String[] args) {
+    
+    DoublyNodeList list=new DoublyNodeList();
+    
+    list.add("CPU");
+    list.add("Motherboard");
+    System.out.println("Number of Elements:"+list.size());
+    list.remove("Motherboard");
+    list.add("PowerSupply");
+    list.add("Keyboard");
+    list.add("Mouse");
+    list.traverse();
+    list.add("Mic");
+    list.traverBack();
+    System.out.println("Number of Elements: "+list.size());
+  }
+}
+    
